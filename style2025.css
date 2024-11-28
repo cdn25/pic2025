@@ -19,6 +19,91 @@ body {
     transform: rotate(-5deg);
   }
 }
+    @media only screen and (min-width: 600px) {
+    .social {
+    display: none;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+    .shareBtn {
+    display: none;
+    }
+    .platforms {
+    right: 5px;
+    bottom: 2px;
+    }
+    ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    }
+    .social {
+    position:fixed;
+    left: 10px;
+    bottom:200px;
+    cursor: pointer;
+    }
+    a.btn i {
+    display:block;
+    width:55px;
+    height:55px;
+    background:#1da1f2;
+    box-shadow:0 0 20px rgba(0,0,0,.1);
+    border-radius:50%;
+    text-align:center;
+    line-height:55px;
+    color:white;
+    position:absolute;
+    top: -2px;
+    left:-2px;
+    font-size:1.3em;
+    transition: all 400ms;
+    transform-origin:center;
+    cursor: pointer;
+    }
+    ul.icons {
+    position:absolute;
+    }
+    ul.icons li a i {
+    display:block;
+    width:50px;
+    height:50px;
+    background:transparent;
+    border-radius:50%;
+    text-align:center;
+    line-height:50px;
+    color:#fff;
+    position:absolute ;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -99;
+    transition: all 200ms ease-out;
+    transform-origin:center;
+    cursor: pointer;
+    }
+    ul.icons li a i.fb {
+    left:-100px;
+    background:transparent;
+    }
+    ul.icons li a i.wp {
+    top:-100px;
+    background:transparent;
+    }
+    ul.icons li a i.tw {
+    left:100px;
+    background:transparent;
+    }
+    ul.icons li a i.insta {
+    left:-100px;
+    background:transparent;
+    }
+    ul.icons li a i.tele {
+    left:-100px;
+    background:transparent;
+    }
+    }
 .container {
   max-width: 450px;
   min-height: 200px;
